@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript y los fundamentos orientados ala programa</title>
+</head>
+<body>
+    <p id="nombre"></p>
+
+    <script> 
+    //Al cargar la pagina,mostrar el nombre
+    let parrafo = document.getElementById ("nombre" )
+    //parrafo.innerText = "Cecilia Maribel Ortez"
+    //Crear un objeto en js
+    let persona = {
+    nombre: "Cecilia",
+    apellido: "Ortez",
+    edad: "15",
+    nombreCompleto: function(){
+        return this.nombre +  ""  + this.apellido
+    }
+}
+//mostrar el nombre completo
+//Cecilia Ortez tiene 15 anos 
+parrafo.innerText = persona.nombreCompleto()  + " tiene "  + persona.edad + " anos "
+    </script>
+</body>
+</html>
